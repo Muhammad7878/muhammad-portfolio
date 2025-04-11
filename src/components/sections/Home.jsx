@@ -1,4 +1,5 @@
 import React from "react";
+import RevealOnScroll from "../RevealOnScroll";
 
 const Home = () => {
   return (
@@ -6,8 +7,10 @@ const Home = () => {
       id="home"
       className="min-h-screen flex items-center justify-center relative"
     >
+      <RevealOnScroll>
+
       <div className="text-center z-10 px-4">
-        <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-600">
+        <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-cyan-400">
           Hi, Im Muhammad
         </h1>
         <p className="text-gray-400 text-lg mb-8 max-w-lg mx-auto">
@@ -35,6 +38,7 @@ const Home = () => {
           </a>
         </div>
       </div>
+      </RevealOnScroll>
     </section>
   );
 };
