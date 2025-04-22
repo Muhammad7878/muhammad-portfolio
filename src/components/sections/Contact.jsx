@@ -11,17 +11,17 @@ const Contact = () => {
 
     e.preventDefault();
     
-    // emailjs
-    //   .sendForm(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, e.target, import.meta.env.VITE_PUBLIC_KEY)
-    //   .then(() => {
-    //     alert("Message Sent!");
-    //     setFormData({ name: "", email: "", message: "" });
-    //   })
-    //   .catch(() => {        
-    //     alert("Something went wrong! Please try again!");
-    //   });
-      alert("Message Sent!");
-      setFormData({ name: "", email: "", message: "" });
+    emailjs
+      .sendForm(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, e.target, import.meta.env.VITE_PUBLIC_KEY)
+      .then(() => {
+        alert("Message Sent!");
+        setFormData({ name: "", email: "", message: "" });
+      })
+      .catch(() => {        
+        alert("Something went wrong! Please try again!");
+      });
+      // alert("Message Sent!");
+      // setFormData({ name: "", email: "", message: "" });
   };
   return (
     <section
