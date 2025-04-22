@@ -8,8 +8,6 @@ const Card = ({ name, quote, title }) => (
   </div>
 );
 const FeedBack = () => {
-
-
   const testimonials = [
     {
       quote:
@@ -26,8 +24,7 @@ const FeedBack = () => {
       title: "Frontend Developer",
     },
     {
-      quote:
-        `Während der Arbeit in der Zelle DCA wurde bisher qualitativ gute Arbeit festgestellt. Zudem bringt Muhammad eigene Ideen ein und geht proaktiv auf Herausforderungen ein, was zur kontinuierlichen Verbesserung beiträgt.
+      quote: `Während der Arbeit in der Zelle DCA wurde bisher qualitativ gute Arbeit festgestellt. Zudem bringt Muhammad eigene Ideen ein und geht proaktiv auf Herausforderungen ein, was zur kontinuierlichen Verbesserung beiträgt.
         Übertragene bzw. von ihm „gepullte“ Aufgaben werden in einer guten Zeit erledigt wodurch er das Projekt und das Team sehr gut unterstützt. Ebenfalls positiv zu bewerten ist ein von mir geäußerter Wunsch, in Teams-Meetings die Kamera öfter anzumachen. 
         Seit dieser Äußerung wurde der Wunsch bereits zu 100 % umgesetzt – danke dafür.`,
       name: "Alessandro G",
@@ -47,19 +44,17 @@ const FeedBack = () => {
 
   return (
     <section
-      id="feedback"
+      id="testimonials"
       className="min-h-screen items-center justify-center py-10"
     >
       <RevealOnScroll>
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
-            Kind Words from Collegues
+            Colleague Testimonials
           </h2>
 
           <div className="moving-cards-container w-full py-10 ">
-            <div
-              className="moving-cards flex-row"
-            >
+            <div className="moving-cards flex-row">
               {[...testimonials, ...testimonials].map((testimonial, index) => (
                 <Card
                   key={index}
