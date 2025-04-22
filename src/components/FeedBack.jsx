@@ -20,7 +20,7 @@ const FeedBack = () => {
     {
       quote: `Muhammad works on the Project DocAdmin for the customer Commerzbank. He is also responsible for maintaining code clarity. He has demonstrated problem-solving skills and creativity in overcoming obstacles. 
               Using his expertise in TypeScript and React, he successfully implemented features and met customer requirements. He is a team player and collaborated effectively with colleagues, particularly while implementing the 
-              “Providerwechsel” feature, which turned out to be more complex than initially expected and estimated. However, in the end, the task was successfully completed and presented. Mukhammadzhon takes on frontend subtasks and, 
+              “Providerwechsel” feature, which turned out to be more complex than initially expected and estimated. However, in the end, the task was successfully completed and presented. Muhammad takes on frontend subtasks and, 
               particularly in the recent past, has completed them independently. For example, in the implementation of the “Edit Default Document” feature, he thoroughly explored the codebase on his own to provide an effective solution.`,
       name: "Mubariz A",
       title: "Frontend Developer",
