@@ -47,3 +47,29 @@ html, body{
   opacity: 1;
   transform: translateY(0);
 }
+
+/* Moving cards effect */
+
+@keyframes moveCards {
+  0% {
+    transform:translateX(0);
+  }
+  100% {
+    transform:translateX(-50%);
+  }
+}
+
+.moving-cards-container {
+  overflow: hidden; /* Hide cards out of the container */
+  width: 100%;
+}
+
+.moving-cards {
+  display: flex;
+  animation: moveCards 40s linear infinite; /* Add this line */
+  width: fit-content;
+}
+
+.moving-cards-container:hover .moving-cards {
+  animation-play-state: paused !important;
+}
