@@ -30,7 +30,7 @@ const Projects = () => {
                 {/* Image Content */}
                 <div className="flex-1 bg-blue-500/50">
                   <img
-                    src="src/assets/NexAI.png"
+                    src="/NexAI.png"
                     alt="NexAI Landing Page"
                     className="w-full h-full object-cover transform rotate-6 rounded-2xl"
                   />
